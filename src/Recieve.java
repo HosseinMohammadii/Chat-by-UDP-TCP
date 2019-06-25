@@ -18,7 +18,7 @@ public class Recieve implements Runnable{
             try {
                 ans = dis.readLine();
             } catch (IOException e) {
-                e.printStackTrace();
+//                e.printStackTrace();
             }
 
             if (ans.equals("over")){
@@ -28,7 +28,7 @@ public class Recieve implements Runnable{
                     ChatClient.stop();
                 }
                 if(source.equals("server")){
-                    System.out.println("getting line from client");
+                    System.out.println("getting line from server");
                     ChatServer.stop();
                 }
                 break;

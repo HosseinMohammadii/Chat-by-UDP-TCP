@@ -99,7 +99,7 @@ public class ChatServer implements Runnable {
                 e.printStackTrace();
             }
 
-            if (line.equals("over")){
+            if (line.equals("over") && !exit) {
                 line = line + "\n";
                 System.out.println("Closing and send close Mes to other person");
                 try {
@@ -114,12 +114,15 @@ public class ChatServer implements Runnable {
             }
 
             line = line + "\n";
-            try {
-                outToTaraf.writeBytes(line);
-            } catch (IOException e) {
+            if (!exit) {
+                try {
+                    outToTaraf.writeBytes(line);
+                    System.out.print("sent: " + line);
+                } catch (IOException e) {
 //                e.printStackTrace();
+                }
             }
-            System.out.print("sent: " + line);
+
         }
 
         System.out.println("finished getting new line");

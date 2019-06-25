@@ -35,12 +35,6 @@ class Listener implements Runnable {
 
         while (!exit) {
 
-            /**initialize socket that listens**/
-            try {
-                socket = new DatagramSocket(17639);
-            } catch (SocketException e) {
-                e.printStackTrace();
-            }
 
             /**get system ip**/
             try (final DatagramSocket ds = new DatagramSocket()) {
@@ -115,7 +109,7 @@ class Listener implements Runnable {
                     }
 
                 }catch (IOException j) {
-                j.printStackTrace();
+//                j.printStackTrace();
                 }
 
 
@@ -125,7 +119,7 @@ class Listener implements Runnable {
                 try {
                     System.out.println("Listener--Response Phase");
 
-                    responseSocket = new DatagramSocket();
+
 
                     String responseText = "ls-response-" + id + "-"+responseSocket.getLocalPort()+"-";
                     byte[] responseBuffer = responseText.getBytes();
@@ -221,6 +215,12 @@ class Listener implements Runnable {
         broadcasterPort = 0;
         broadcasterID = 0;
         confirmerID = 0;
+        try {
+            socket = new DatagramSocket(17639);
+            responseSocket = new DatagramSocket();
+        } catch (SocketException e) {
+            e.printStackTrace();
+        }
         System.out.println("Listen should resume from first");
     }
 }

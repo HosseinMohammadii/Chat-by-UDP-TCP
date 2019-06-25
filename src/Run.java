@@ -27,7 +27,7 @@ public class Run{
         broadcaster = new Broadcaster(clientID);
         listener = new Listener(broadcaster,clientID);
         broadcaster.setListener(listener);
-//        startListen(listener);
+        startListen(listener);
         startBroadcast(broadcaster);
 
     }

@@ -33,11 +33,7 @@ public class Broadcaster implements Runnable{
     public void run() {
 
         while (!exit) {
-            try {
-                socket = new DatagramSocket();
-            } catch (SocketException e) {
-                e.printStackTrace();
-            }
+
 
 
         String broadcastMessage = "bc-find-"+id+"-";
@@ -98,6 +94,7 @@ public class Broadcaster implements Runnable{
                     }
 
                     if (moduleType.equals("ls") && messageType.equals("response")) {
+                        System.out.println("valid response message");
                         listenerID = Integer.valueOf(tmp);
                     } else
                         continue;
@@ -148,6 +145,11 @@ public class Broadcaster implements Runnable{
     public void resume(){
         state=0;
         exit = false;
+        try {
+            socket = new DatagramSocket();
+        } catch (SocketException e) {
+            e.printStackTrace();
+        }
         System.out.println("BroadCast should resume from first");
     }
 }
