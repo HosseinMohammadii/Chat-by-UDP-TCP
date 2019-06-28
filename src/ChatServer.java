@@ -8,6 +8,7 @@ public class ChatServer implements Runnable {
     String address;
     int port;
     ServerSocket serverSocket;
+    boolean clientConnected;
     private static volatile boolean exit = false;
 
     public ChatServer() throws IOException {
@@ -47,15 +48,18 @@ public class ChatServer implements Runnable {
     }
     @Override
     public void run() {
+        clientConnected = false;
         Socket socket = null;
         try {
             serverSocket.setSoTimeout(6000);
             socket = serverSocket.accept();
+            clientConnected = true;
             System.out.println("Client accepted");
         } catch (IOException e) {
             System.out.println("couldn't to accept client.starting broadcasting and listening");
             Run.startBroadcast();
             Run.startListen();
+            clientConnected = false;
         }
 
 
@@ -66,15 +70,18 @@ public class ChatServer implements Runnable {
         StringBuilder fullText = new StringBuilder();
 
 
-
-
-        BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader inFromUser = null;
+        if(clientConnected) {
+             inFromUser = new BufferedReader(new InputStreamReader(System.in));
+        }
 
         DataOutputStream outToTaraf = null;
-        try {
-            outToTaraf = new DataOutputStream(socket.getOutputStream());
-        } catch (IOException e) {
-            e.printStackTrace();
+        if(clientConnected) {
+            try {
+                outToTaraf = new DataOutputStream(socket.getOutputStream());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         DataInputStream inFromTaraf = null;
@@ -83,7 +90,7 @@ public class ChatServer implements Runnable {
             System.out.println("Server : Input data stream initialized correct");
         } catch (IOException e) {
             System.out.println("Server : Input data stream not not initialized correct");
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         //DataInputStream inFromServer = new DataInputStream(clientSocket.getInputStream());
         String in;
@@ -105,7 +112,8 @@ public class ChatServer implements Runnable {
                 try {
                     outToTaraf.writeBytes(line);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    System.out.println("connection lost");
+//                    e.printStackTrace();
                 }
                 recieve.stop();
                 stop();
@@ -120,6 +128,8 @@ public class ChatServer implements Runnable {
                     System.out.print("sent: " + line);
                 } catch (IOException e) {
 //                e.printStackTrace();
+                    System.out.println("connection lost");
+                    exit =true;
                 }
             }
 

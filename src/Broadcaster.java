@@ -1,4 +1,4 @@
-import jdk.management.resource.internal.inst.SocketOutputStreamRMHooks;
+
 
 import java.io.IOException;
 import java.net.*;
@@ -61,7 +61,10 @@ public class Broadcaster implements Runnable{
                     socket.send(packet);
 
                 } catch (IOException e) {
-                    e.printStackTrace();
+
+                    System.out.println("it seems connection lost");
+                    stop();
+//                    e.printStackTrace();
                 }
                 System.out.println("Message Sent!" + "-" + packet.getAddress() + "-" + packet.getPort());
                 System.out.println("Waiting for response");
@@ -103,10 +106,14 @@ public class Broadcaster implements Runnable{
                         state = 1;
                         listener.stop();
                     }
-                } catch (SocketException e) {
+                }
+                catch (SocketException e) {
 //                e.printStackTrace();
-                } catch (IOException e) {
+                }
+                catch (IOException e) {
 //                e.printStackTrace();
+                    System.out.println("it seems connection lost.");
+                    stop();
                 }
 
             }
@@ -125,9 +132,11 @@ public class Broadcaster implements Runnable{
                     stop();
 
 
-                } catch (IOException e) {
-                    e.printStackTrace();
-//                    resume();
+                }
+                catch (IOException e) {
+//                    e.printStackTrace();
+                    System.out.println("some thing went wrong.trying again");
+                    resume();
                     Run.startListen();
                 }
             }

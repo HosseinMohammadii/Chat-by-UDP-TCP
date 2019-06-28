@@ -2,7 +2,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 
 public class Recieve implements Runnable{
-    String ans;
+    String ans = "a";
     int turn;
     DataInputStream dis;
     String source;
@@ -19,6 +19,8 @@ public class Recieve implements Runnable{
                 ans = dis.readLine();
             } catch (IOException e) {
 //                e.printStackTrace();
+                System.out.println("connection lost. type any thing to exit");
+                exit=true;
             }
 
             if (ans.equals("over")){
@@ -33,6 +35,7 @@ public class Recieve implements Runnable{
                 }
                 break;
             }
+            if(!exit)
             System.out.println("Received: " + ans);
 
         }
