@@ -113,9 +113,9 @@ class Listener implements Runnable {
                 }
                 catch (IOException e) {
 //                    e.printStackTrace();
-                    System.out.println("connection lost.");
-                    stop();
-                    broadcaster.stop();
+//                    System.out.println("connection lost.");
+//                    stop();
+//                    broadcaster.stop();
                 }
 
 

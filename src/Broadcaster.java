@@ -112,8 +112,8 @@ public class Broadcaster implements Runnable{
                 }
                 catch (IOException e) {
 //                e.printStackTrace();
-                    System.out.println("it seems connection lost.");
-                    stop();
+//                    System.out.println("it seems connection lost.");
+//                    stop();
                 }
 
             }
