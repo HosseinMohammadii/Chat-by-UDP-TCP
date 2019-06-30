@@ -40,7 +40,6 @@ public class Broadcaster implements Runnable{
 //            String broadcastMessage = "bc-find-" + 501 + "-";
             String confirmMessage = "bc-confirm-" + id + "-";
             byte[] buffer = broadcastMessage.getBytes();
-//        System.out.println("brrrbrbrbrbrbrbrbrbrbr " + broadcastMessage + "  " + buffer.length);
             byte[] responseBuffer = new byte[256];
 
 
@@ -121,7 +120,7 @@ public class Broadcaster implements Runnable{
             while (state == 1) {
                 try {
                     int tcpServerPort = Run.startChatServer();
-                    Run.runChatServer();
+                    Run.runChatServer(listenerID);
                     confirmMessage = confirmMessage + tcpServerPort + "-";
                     byte[] confirmBuffer = confirmMessage.getBytes();
                     DatagramPacket confirmPacket =

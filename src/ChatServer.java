@@ -10,6 +10,7 @@ public class ChatServer implements Runnable {
     ServerSocket serverSocket;
     boolean clientConnected;
     private static volatile boolean exit = false;
+    private int other_ID;
 
     public ChatServer() throws IOException {
 
@@ -20,6 +21,10 @@ public class ChatServer implements Runnable {
         serverSocket = new ServerSocket(port);
         System.out.println("Server Socket created successfully on port " + port);
 
+    }
+
+    public void set_other_ID(int i){
+        other_ID = i;
     }
 
     public int getPort(){
@@ -54,7 +59,7 @@ public class ChatServer implements Runnable {
             serverSocket.setSoTimeout(6000);
             socket = serverSocket.accept();
             clientConnected = true;
-            System.out.println("Client accepted");
+            System.out.println("Client accepted.\nyou are going to chat with user < " + other_ID  + " > type some thing");
         } catch (IOException e) {
             System.out.println("couldn't to accept client.starting broadcasting and listening");
             Run.startBroadcast();
@@ -135,7 +140,7 @@ public class ChatServer implements Runnable {
 
         }
 
-        System.out.println("finished getting new line");
+        System.out.println("finished getting new line.type last word to bye bye :)  (other client will not receive that)");
         try {
             socket.close();
             System.out.println("closed Server socket ");

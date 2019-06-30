@@ -44,11 +44,13 @@ public class Run{
         return chatServerPort;
     }
 
-    public static void runChatClient() throws IOException {
+    public static void runChatClient(int other_id) throws IOException {
+        chatClient.set_other_ID(other_id);
         t3 = new Thread(chatClient , "chatClient");
         t3.start();
     }
-    public static void runChatServer() throws IOException {
+    public static void runChatServer(int other_id) throws IOException {
+        chatServer.set_other_ID(other_id);
         t4 = new Thread(chatServer , "chatServer");
         t4.start();
     }

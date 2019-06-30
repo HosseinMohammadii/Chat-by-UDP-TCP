@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="ea43612d-4d27-48cd-abfd-d9f17c4e9af1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NetworkProject2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NetworkProject2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NetworkProject2/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NetworkProject2/Run.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Broadcaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Broadcaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TCPClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TCPRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TCPRun2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TCPServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestUDPClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestUDPServer.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Broadcaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+            <state relative-caret-position="1139">
+              <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,35 +41,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="116" column="29" lean-forward="true" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+            <state relative-caret-position="-3040">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TCPClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Run.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TCPServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="-85">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -66,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ChatClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="88" column="58" selection-start-line="88" selection-start-column="58" selection-end-line="88" selection-end-column="58" />
+            <state relative-caret-position="241">
+              <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ChatServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="114" column="58" selection-start-line="114" selection-start-column="58" selection-end-line="114" selection-end-column="58" />
+            <state relative-caret-position="153">
+              <caret line="56" column="80" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#nextFreePort#0;class#ChatServer#0" />
@@ -93,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Recieve.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="3">
               <caret line="21" column="78" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,6 +113,8 @@
       <find>server</find>
       <find>connection lost</find>
       <find>connection</find>
+      <find>tokh</find>
+      <find>das</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,13 +124,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
-        <option value="$PROJECT_DIR$/src/Main2.java" />
         <option value="$PROJECT_DIR$/src/Message.java" />
         <option value="$PROJECT_DIR$/New Text Document (2).txt" />
         <option value="$PROJECT_DIR$/src/TestUDPServer.java" />
-        <option value="$PROJECT_DIR$/src/TestUDPClient.java" />
         <option value="$PROJECT_DIR$/../untitled/src/TCPRun.java" />
         <option value="$PROJECT_DIR$/src/TCPRun.java" />
         <option value="$PROJECT_DIR$/src/Recieverr.java" />
@@ -143,12 +135,15 @@
         <option value="$PROJECT_DIR$/src/TCPRun2.java" />
         <option value="$PROJECT_DIR$/src/TCPClient.java" />
         <option value="$PROJECT_DIR$/src/TCPServer.java" />
-        <option value="$PROJECT_DIR$/src/Run.java" />
-        <option value="$PROJECT_DIR$/src/ChatServer.java" />
-        <option value="$PROJECT_DIR$/src/ChatClient.java" />
         <option value="$PROJECT_DIR$/src/Recieve.java" />
         <option value="$PROJECT_DIR$/src/Listener.java" />
+        <option value="$PROJECT_DIR$/src/Main2.java" />
+        <option value="$PROJECT_DIR$/src/Run.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/TestUDPClient.java" />
         <option value="$PROJECT_DIR$/src/Broadcaster.java" />
+        <option value="$PROJECT_DIR$/src/ChatServer.java" />
+        <option value="$PROJECT_DIR$/src/ChatClient.java" />
       </list>
     </option>
   </component>
@@ -164,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,12 +176,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561882168425" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561919171313" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -200,7 +195,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Run">
+  <component name="RunManager" selected="Application.Main2">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="NetworkProject2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main2" />
+      <module name="NetworkProject2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Run" />
       <module name="NetworkProject2" />
@@ -223,34 +232,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUDPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestUDPClient" />
-      <module name="NetworkProject2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUDPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestUDPServer" />
-      <module name="NetworkProject2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Run" />
       <item itemvalue="Application.TCPClient" />
       <item itemvalue="Application.TCPServer" />
-      <item itemvalue="Application.TestUDPClient" />
-      <item itemvalue="Application.TestUDPServer" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Run" />
         <item itemvalue="Application.TCPClient" />
         <item itemvalue="Application.TCPServer" />
-        <item itemvalue="Application.TestUDPServer" />
-        <item itemvalue="Application.TestUDPClient" />
       </list>
     </recent_temporary>
   </component>
@@ -278,13 +273,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16868381" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.17019667" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -292,7 +288,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.2487725" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2487725" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -320,17 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#148#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/New Text Document (2).txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -349,26 +334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="545" column="36" lean-forward="true" selection-start-line="545" selection-start-column="36" selection-end-line="545" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestUDPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="110" selection-start-line="36" selection-start-column="110" selection-end-line="36" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestUDPServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,30 +450,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChatClient.java">
+    <entry file="file://$PROJECT_DIR$/src/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="88" column="58" selection-start-line="88" selection-start-column="58" selection-end-line="88" selection-end-column="58" />
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recieve.java">
+    <entry file="file://$PROJECT_DIR$/src/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="78" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="28" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -522,30 +484,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChatServer.java">
+    <entry file="file://$PROJECT_DIR$/src/TestUDPClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="114" column="58" selection-start-line="114" selection-start-column="58" selection-end-line="114" selection-end-column="58" />
+        <state relative-caret-position="292">
+          <caret line="36" column="110" selection-start-line="36" selection-start-column="110" selection-end-line="36" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#nextFreePort#0;class#ChatServer#0" />
-            <element signature="e#4527#4528#0" expanded="true" />
-            <element signature="e#4554#4555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listener.java">
+    <entry file="file://$PROJECT_DIR$/src/TestUDPServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="116" column="29" lean-forward="true" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Broadcaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+        <state relative-caret-position="289">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -554,8 +506,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Run.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+        <state relative-caret-position="-85">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3040">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Broadcaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Recieve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="21" column="78" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChatClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChatServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="56" column="80" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#nextFreePort#0;class#ChatServer#0" />
+            <element signature="e#4527#4528#0" expanded="true" />
+            <element signature="e#4554#4555#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

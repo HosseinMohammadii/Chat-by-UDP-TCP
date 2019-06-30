@@ -11,6 +11,7 @@ public class ChatClient implements Runnable {
     int port;
     Socket socket = null;
     private static volatile boolean exit = false;
+    private int other_ID;
 
 
 
@@ -28,6 +29,9 @@ public class ChatClient implements Runnable {
         return port;
     }
 
+    public void set_other_ID(int i){
+        other_ID = i;
+    }
 
 
     @Override
@@ -42,7 +46,7 @@ public class ChatClient implements Runnable {
             Run.startListen();
             e.printStackTrace();
         }
-        System.out.println("Connected");
+        System.out.println("Connected to Server.\nyou are going to chat with user < " + other_ID  + " > type some thing");
 
         StringBuilder sentence = new StringBuilder();
         String line = "";
@@ -109,7 +113,7 @@ public class ChatClient implements Runnable {
 
         }
 
-        System.out.println("finished getting new line");
+        System.out.println("finished getting new line.type last word to bye bye :)  (other client will not receive that)");
         try {
             socket.close();
             System.out.println("closed client socket");

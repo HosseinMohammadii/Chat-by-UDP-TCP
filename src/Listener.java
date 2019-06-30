@@ -174,7 +174,7 @@ class Listener implements Runnable {
                         Thread.sleep(2000);
                         System.out.println("chat client starting running on address "+broadcasterAddress + " and port" + serverPort);
                         Run.startChatClient(broadcasterAddress,serverPort);
-                        Run.runChatClient();
+                        Run.runChatClient(confirmerID);
                         stop();
                     }
                     else
